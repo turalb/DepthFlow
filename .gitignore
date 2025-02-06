@@ -1,2 +1,19 @@
 Workspace
+
+# Ignore virtual environment
+venv/
+
+# Ignore SQLite database
+db.sqlite3
+
+# Ignore compiled Python files
+__pycache__/
 *__pycache__
+*.pyc
+
+# Ignore logs and environment variables
+*.log
+.env
+
+# Ignore Emacs backup files
+*~
