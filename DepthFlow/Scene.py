@@ -40,6 +40,8 @@ class DepthScene(ShaderScene):
     # Constants
     DEFAULT_IMAGE = "https://w.wallhaven.cc/full/pk/wallhaven-pkz5r9.png"
     DEPTH_SHADER  = (DEPTHFLOW.RESOURCES.SHADERS/"DepthFlow.glsl")
+    # Temporary hack
+    os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
 
     # DepthFlow objects
     animation: List[Union[Animation, Preset, DepthState]] = field(factory=list)
